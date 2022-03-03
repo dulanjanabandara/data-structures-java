@@ -6,7 +6,8 @@ public class App {
         list.addLast(10);
         list.addLast(20);
         list.addLast(30);
-        System.out.println(list.indexOf(40));
+        System.out.println(list.contains(10));
+        
 
         // // 1) Array
         // Array numbers = new Array(3);
