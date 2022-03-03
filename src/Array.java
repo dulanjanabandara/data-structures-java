@@ -2,6 +2,8 @@ public class Array {
     
     private int[] items;
     private int count;
+    private int current;
+    private int max;
 
     public Array(int length) {
         items = new int[length];
@@ -48,8 +50,18 @@ public class Array {
                 return i;
             }
         }
-        
+
         return -1;
+    }
+
+    public int max() {
+        for (int i = 0; i < count; i++) {
+            current = items[i];
+            if (current >= max) {
+                max = current;
+            }
+        }
+        return max;
     }
 
     public void print() {
